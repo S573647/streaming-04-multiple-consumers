@@ -1,0 +1,20 @@
+2024-05-22 04:50:47,387.v3_emitter_of_tasks.INFO ==================================================
+2024-05-22 04:50:47,388.v3_emitter_of_tasks.INFO Today is 2024-05-22 at 04:50 AM
+2024-05-22 04:50:47,389.v3_emitter_of_tasks.INFO Running on: nt Windows 11
+2024-05-22 04:50:47,389.v3_emitter_of_tasks.INFO Python version:  3.12.1
+2024-05-22 04:50:47,389.v3_emitter_of_tasks.INFO Python path: C:\Users\kamal\AppData\Local\Programs\Python\Python312
+2024-05-22 04:50:47,390.v3_emitter_of_tasks.INFO Working dir: C:\MS\data_analytics\github\44671_DataStreaming\streaming-04-multiple-consumers
+2024-05-22 04:50:47,390.v3_emitter_of_tasks.INFO ==================================================
+2024-05-22 04:50:49,437.v3_emitter_of_tasks.INFO  [x] task file name tasks.csv
+2024-05-22 04:50:49,461.v3_emitter_of_tasks.INFO  [x] Sent First task....
+2024-05-22 04:50:49,464.v3_emitter_of_tasks.INFO  [x] connection closed <BlockingConnection impl=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-05-22 04:50:49,476.v3_emitter_of_tasks.INFO  [x] Sent Second task....
+2024-05-22 04:50:49,478.v3_emitter_of_tasks.INFO  [x] connection closed <BlockingConnection impl=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-05-22 04:50:49,490.v3_emitter_of_tasks.INFO  [x] Sent Third task....
+2024-05-22 04:50:49,493.v3_emitter_of_tasks.INFO  [x] connection closed <BlockingConnection impl=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-05-22 04:50:49,528.v3_emitter_of_tasks.INFO  [x] Sent Forth task...
+2024-05-22 04:50:49,531.v3_emitter_of_tasks.INFO  [x] connection closed <BlockingConnection impl=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-05-22 04:50:49,542.v3_emitter_of_tasks.INFO  [x] Sent Fifth task...
+2024-05-22 04:50:49,544.v3_emitter_of_tasks.INFO  [x] connection closed <BlockingConnection impl=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-05-22 04:50:49,557.v3_emitter_of_tasks.INFO  [x] Sent Sixth task...
+2024-05-22 04:50:49,559.v3_emitter_of_tasks.INFO  [x] connection closed <BlockingConnection impl=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
