@@ -20,13 +20,15 @@ def callback(ch, method, properties, body):
     
     logger.info(f" [x] Received {body.decode()}")
     # simulate work by sleeping for the number of dots in the message
-    # time.sleep(body.count(b"."))
+    #time.sleep(body.count(b"."))
+    
     # when done with task, tell the user
     
     logger.info(f" [x] Done.")
     # acknowledge the message was received and processed 
     # (now it can be deleted from the queue)
     ch.basic_ack(delivery_tag=method.delivery_tag)
+    time.sleep(2)
 
 
 # define a main function to run the program

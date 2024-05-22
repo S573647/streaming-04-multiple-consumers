@@ -12,6 +12,7 @@
 """
 
 import csv
+import time
 import pika
 import sys
 import webbrowser
@@ -56,6 +57,7 @@ def send_message(host: str, queue_name: str, message: str):
         print(f" [x] Sent {message}")
         # log a message for the user
         logger.info(f" [x] Sent {message}")
+        time.sleep(2)
     except pika.exceptions.AMQPConnectionError as e:
         print(f"Error: Connection to RabbitMQ server failed: {e}")        
         # log a message for the user
@@ -80,6 +82,7 @@ def send_tasks_from_csv( host: str, file_path: str,queue_name: str):
     tasks = read_tasks_from_csv(file_path)
     for task in tasks:
         send_message(host, queue_name, task)
+        
 
 # Standard Python idiom to indicate main program entry point
 # This allows us to import this module and use its functions
