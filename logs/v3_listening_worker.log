@@ -13,3 +13,32 @@
 2024-05-22 05:07:37,831.v3_listening_worker.INFO  [x] Done.
 2024-05-22 05:07:43,872.v3_listening_worker.INFO  [x] Received Sixth task...
 2024-05-22 05:07:43,873.v3_listening_worker.INFO  [x] Done.
+2024-05-22 21:59:23,932.v3_listening_worker.ERROR ERROR: something went wrong.
+Traceback (most recent call last):
+  File "C:\MS\data_analytics\github\44671_DataStreaming\streaming-04-multiple-consumers\v3_listening_worker.py", line 82, in main
+    channel.start_consuming()
+  File "C:\Users\kamal\AppData\Local\Programs\Python\Python312\Lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "C:\Users\kamal\AppData\Local\Programs\Python\Python312\Lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "C:\Users\kamal\AppData\Local\Programs\Python\Python312\Lib\site-packages\pika\adapters\blocking_connection.py", line 842, in process_data_events
+    self._flush_output(common_terminator)
+  File "C:\Users\kamal\AppData\Local\Programs\Python\Python312\Lib\site-packages\pika\adapters\blocking_connection.py", line 523, in _flush_output
+    raise self._closed_result.value.error
+pika.exceptions.AMQPHeartbeatTimeout: No activity or too many missed heartbeats in the last 60 seconds
+2024-05-22 21:59:24,128.v3_listening_worker.ERROR The error says: No activity or too many missed heartbeats in the last 60 seconds
+Traceback (most recent call last):
+  File "C:\MS\data_analytics\github\44671_DataStreaming\streaming-04-multiple-consumers\v3_listening_worker.py", line 82, in main
+    channel.start_consuming()
+  File "C:\Users\kamal\AppData\Local\Programs\Python\Python312\Lib\site-packages\pika\adapters\blocking_connection.py", line 1883, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "C:\Users\kamal\AppData\Local\Programs\Python\Python312\Lib\site-packages\pika\adapters\blocking_connection.py", line 2044, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "C:\Users\kamal\AppData\Local\Programs\Python\Python312\Lib\site-packages\pika\adapters\blocking_connection.py", line 842, in process_data_events
+    self._flush_output(common_terminator)
+  File "C:\Users\kamal\AppData\Local\Programs\Python\Python312\Lib\site-packages\pika\adapters\blocking_connection.py", line 523, in _flush_output
+    raise self._closed_result.value.error
+pika.exceptions.AMQPHeartbeatTimeout: No activity or too many missed heartbeats in the last 60 seconds
+2024-05-22 21:59:24,138.v3_listening_worker.INFO 
+Closing connection. Goodbye.
+

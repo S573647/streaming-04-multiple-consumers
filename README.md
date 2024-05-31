@@ -35,6 +35,7 @@ Explore the RabbitMQ website.
 
 Will it terminate on its own? How do you know? 
 
+
 ## Ready for Work
 
 1. Use your emitter_of_tasks to produce more task messages.
